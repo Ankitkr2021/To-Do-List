@@ -1,0 +1,50 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1759467370988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759467481762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,12 @@\n         <div class=\"task\">\r\n         <input id=\"add\" type=\"text\" placeholder=\"Add your Task\">\r\n         <button type=\"submit\">Add</button>\r\n         </div>\r\n-        <ul>\r\n-            <li class=\"checked\">Task 1</li>\r\n+        <ul id=\"list-container\">\r\n+            <!-- <li class=\"checked\">Task 1</li>\r\n             <li>Task 2</li>\r\n-            <li>Task 3</li>\r\n+            <li>Task 3</li> -->\r\n         </ul>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759467508278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,6 +18,8 @@\n             <li>Task 2</li>\r\n             <li>Task 3</li> -->\r\n         </ul>\r\n     </div>\r\n+\r\n+    <script src=\"./script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759467513559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,7 +19,7 @@\n             <li>Task 3</li> -->\r\n         </ul>\r\n     </div>\r\n \r\n-    <script src=\"./script.js\"></script>\r\n+    <script src=\"script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759467592989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,15 @@\n     <div class=\"box\">\r\n         <h1>To-Do List 📒✏️</h1>\r\n         <div class=\"task\">\r\n         <input id=\"add\" type=\"text\" placeholder=\"Add your Task\">\r\n-        <button type=\"submit\">Add</button>\r\n+        <button onclick=\"addTask\">Add</button>\r\n         </div>\r\n         <ul id=\"list-container\">\r\n             <!-- <li class=\"checked\">Task 1</li>\r\n             <li>Task 2</li>\r\n             <li>Task 3</li> -->\r\n         </ul>\r\n     </div>\r\n-\r\n     <script src=\"script.js\"></script>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759470783436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n <body>\r\n     <div class=\"box\">\r\n         <h1>To-Do List 📒✏️</h1>\r\n         <div class=\"task\">\r\n-        <input id=\"add\" type=\"text\" placeholder=\"Add your Task\">\r\n+        <input id=\"input-box\" type=\"text\" placeholder=\"Add your Task\">\r\n         <button onclick=\"addTask\">Add</button>\r\n         </div>\r\n         <ul id=\"list-container\">\r\n             <!-- <li class=\"checked\">Task 1</li>\r\n"
+                },
+                {
+                    "date": 1759470835460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <div class=\"box\">\r\n         <h1>To-Do List 📒✏️</h1>\r\n         <div class=\"task\">\r\n         <input id=\"input-box\" type=\"text\" placeholder=\"Add your Task\">\r\n-        <button onclick=\"addTask\">Add</button>\r\n+        <button onclick=\"addTask()\">Add</button>\r\n         </div>\r\n         <ul id=\"list-container\">\r\n             <!-- <li class=\"checked\">Task 1</li>\r\n             <li>Task 2</li>\r\n"
+                },
+                {
+                    "date": 1759471167785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n         <input id=\"input-box\" type=\"text\" placeholder=\"Add your Task\">\r\n         <button onclick=\"addTask()\">Add</button>\r\n         </div>\r\n         <ul id=\"list-container\">\r\n-            <!-- <li class=\"checked\">Task 1</li>\r\n+            <li class=\"checked\">Task 1</li>\r\n             <li>Task 2</li>\r\n-            <li>Task 3</li> -->\r\n+            <li>Task 3</li>\r\n         </ul>\r\n     </div>\r\n     <script src=\"script.js\"></script>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1759471191765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n         <input id=\"input-box\" type=\"text\" placeholder=\"Add your Task\">\r\n         <button onclick=\"addTask()\">Add</button>\r\n         </div>\r\n         <ul id=\"list-container\">\r\n-            <!-- <li class=\"checked\">Task 1</li>\r\n-            <li>Task 2</li>\r\n-            <li>Task 3</li> -->\r\n+            <li class=\"checked\">addTask()</li>\r\n+            <li></li>\r\n+            <li>Task 3</li>\r\n         </ul>\r\n     </div>\r\n     <script src=\"script.js\"></script>\r\n </body>\r\n"
+                }
+            ],
+            "date": 1759467370988,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>To-Do-List</title>\r\n    <link rel=\"stylesheet\" href=\"./style.css\">\r\n</head>\r\n<body>\r\n    <div class=\"box\">\r\n        <h1>To-Do List 📒✏️</h1>\r\n        <div class=\"task\">\r\n        <input id=\"add\" type=\"text\" placeholder=\"Add your Task\">\r\n        <button type=\"submit\">Add</button>\r\n        </div>\r\n        <ul>\r\n            <li class=\"checked\">Task 1</li>\r\n            <li>Task 2</li>\r\n            <li>Task 3</li>\r\n        </ul>\r\n    </div>\r\n</body>\r\n</html>"
+        }
+    ]
+}

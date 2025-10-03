@@ -1,0 +1,114 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 24,
+            "patches": [
+                {
+                    "date": 1759470816558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759470829330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,6 @@\n const inputBox = document.getElementById(\"input-box\");\r\n-const listContainer = document.getElementById(\"list-container\");\n\\ No newline at end of file\n+const listContainer = document.getElementById(\"list-container\");\r\n+\r\n+function addTask() {\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759470939402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,13 @@\n const inputBox = document.getElementById(\"input-box\");\r\n const listContainer = document.getElementById(\"list-container\");\r\n \r\n function addTask() {\r\n-    \r\n+    if(inputBox === '') {\r\n+        alert(\"You must write something!\");\r\n+    }\r\n+    else {\r\n+        let li = document.createElement(\"li\");\r\n+        li.innerHTML = inputBox.value;\r\n+        listContainer.appendChild(li);\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471068717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,7 @@\n     }\r\n     else {\r\n         let li = document.createElement(\"li\");\r\n         li.innerHTML = inputBox.value;\r\n-        listContainer.appendChild(li);\r\n+        listContainer.appendChild(li); \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471214367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n const inputBox = document.getElementById(\"input-box\");\r\n const listContainer = document.getElementById(\"list-container\");\r\n \r\n function addTask() {\r\n-    if(inputBox === '') {\r\n+    if(inputBox.value === '') {\r\n         alert(\"You must write something!\");\r\n     }\r\n     else {\r\n         let li = document.createElement(\"li\");\r\n"
+                },
+                {
+                    "date": 1759471264288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n         let li = document.createElement(\"li\");\r\n         li.innerHTML = inputBox.value;\r\n         listContainer.appendChild(li); \r\n     }\r\n+     \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471272104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n         let li = document.createElement(\"li\");\r\n         li.innerHTML = inputBox.value;\r\n         listContainer.appendChild(li); \r\n     }\r\n-     \r\n+      \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471282089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n         let li = document.createElement(\"li\");\r\n         li.innerHTML = inputBox.value;\r\n         listContainer.appendChild(li); \r\n     }\r\n-      \r\n+      inputBox.value = \"\";\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471404156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,10 @@\n     else {\r\n         let li = document.createElement(\"li\");\r\n         li.innerHTML = inputBox.value;\r\n         listContainer.appendChild(li); \r\n+        let span = document.createElement(\"span\");\r\n+        span.innerHTML = \"\\u00d7\";\r\n+        li.appendChild(span);\r\n     }\r\n       inputBox.value = \"\";\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471506618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,7 +11,8 @@\n         listContainer.appendChild(li); \r\n         let span = document.createElement(\"span\");\r\n         span.innerHTML = \"\\u00d7\";\r\n         li.appendChild(span);\r\n+        span.\r\n     }\r\n       inputBox.value = \"\";\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471556530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,7 @@\n         listContainer.appendChild(li); \r\n         let span = document.createElement(\"span\");\r\n         span.innerHTML = \"\\u00d7\";\r\n         li.appendChild(span);\r\n-        span.\r\n     }\r\n       inputBox.value = \"\";\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471795493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,6 @@\n         span.innerHTML = \"\\u00d7\";\r\n         li.appendChild(span);\r\n     }\r\n       inputBox.value = \"\";\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1759471885134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,4 +15,5 @@\n     }\r\n       inputBox.value = \"\";\r\n }\r\n \r\n+listContainer.addEventListener()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759471988410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,12 @@\n     }\r\n       inputBox.value = \"\";\r\n }\r\n \r\n-listContainer.addEventListener()\n\\ No newline at end of file\n+listContainer.addEventListener(\"click\", function(e) {\r\n+    if(e.target.tagName === \"LI\") {\r\n+        e.target.classList.toggle(\"checked\");\r\n+    }\r\n+    else if(e.target.tagName === \"SPAN\"){\r\n+        e.target.parentElement.remove();\r\n+    }\r\n+}, false);\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759472003844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     }\r\n       inputBox.value = \"\";\r\n }\r\n \r\n-listContainer.addEventListener(\"click\", function(e) {\r\n+listContainer.addEventListener(\"click\", function() {\r\n     if(e.target.tagName === \"LI\") {\r\n         e.target.classList.toggle(\"checked\");\r\n     }\r\n     else if(e.target.tagName === \"SPAN\"){\r\n"
+                },
+                {
+                    "date": 1759472014375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     }\r\n       inputBox.value = \"\";\r\n }\r\n \r\n-listContainer.addEventListener(\"click\", function() {\r\n+listContainer.addEventListener(\"click\", function(f) {\r\n     if(e.target.tagName === \"LI\") {\r\n         e.target.classList.toggle(\"checked\");\r\n     }\r\n     else if(e.target.tagName === \"SPAN\"){\r\n"
+                },
+                {
+                    "date": 1759472028743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     }\r\n       inputBox.value = \"\";\r\n }\r\n \r\n-listContainer.addEventListener(\"click\", function(f) {\r\n+listContainer.addEventListener(\"click\", function(e) {\r\n     if(e.target.tagName === \"LI\") {\r\n         e.target.classList.toggle(\"checked\");\r\n     }\r\n     else if(e.target.tagName === \"SPAN\"){\r\n"
+                },
+                {
+                    "date": 1759472082837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,6 @@\n     }\r\n     else if(e.target.tagName === \"SPAN\"){\r\n         e.target.parentElement.remove();\r\n     }\r\n-}, false);\n\\ No newline at end of file\n+}, false);\r\n+\r\n"
+                },
+                {
+                    "date": 1759472152517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,4 +24,7 @@\n         e.target.parentElement.remove();\r\n     }\r\n }, false);\r\n \r\n+function saveData(){\r\n+    localStorage.setItem(\"data\", listContainer.innerHTML);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759472167999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n         span.innerHTML = \"\\u00d7\";\r\n         li.appendChild(span);\r\n     }\r\n       inputBox.value = \"\";\r\n+      saveData();\r\n }\r\n \r\n listContainer.addEventListener(\"click\", function(e) {\r\n     if(e.target.tagName === \"LI\") {\r\n"
+                },
+                {
+                    "date": 1759474271749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,11 +19,13 @@\n \r\n listContainer.addEventListener(\"click\", function(e) {\r\n     if(e.target.tagName === \"LI\") {\r\n         e.target.classList.toggle(\"checked\");\r\n+        saveData();\r\n     }\r\n     else if(e.target.tagName === \"SPAN\"){\r\n         e.target.parentElement.remove();\r\n+        saveData();\r\n     }\r\n }, false);\r\n \r\n function saveData(){\r\n"
+                },
+                {
+                    "date": 1759474312016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,5 +29,9 @@\n }, false);\r\n \r\n function saveData(){\r\n     localStorage.setItem(\"data\", listContainer.innerHTML);\r\n-}\n\\ No newline at end of file\n+}\r\n+\r\n+function showTask() {\r\n+    list\r\n+}   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759474321480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     localStorage.setItem(\"data\", listContainer.innerHTML);\r\n }\r\n \r\n function showTask() {\r\n-    list\r\n+    listContainer.innerHTML = localStorage.\r\n }   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759474331846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,6 @@\n     localStorage.setItem(\"data\", listContainer.innerHTML);\r\n }\r\n \r\n function showTask() {\r\n-    listContainer.innerHTML = localStorage.\r\n+    listContainer.innerHTML = localStorage.getItem(\"data\");\r\n }   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759474342354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,6 @@\n }\r\n \r\n function showTask() {\r\n     listContainer.innerHTML = localStorage.getItem(\"data\");\r\n-}   \n\\ No newline at end of file\n+}   \r\n+showTask();\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1759470816558,
+            "name": "Commit-0",
+            "content": "const inputBox = document.getElementById(\"input-box\");\r\nconst listContainer = document.getElementById(\"list-container\");"
+        }
+    ]
+}
